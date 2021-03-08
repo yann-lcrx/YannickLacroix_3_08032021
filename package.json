@@ -1,0 +1,19 @@
+{
+  "name": "yannicklacroix_3_08032021",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yann-lcrx/YannickLacroix_3_08032021.git"
+  },
+  "author": "Yannick Lacroix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yann-lcrx/YannickLacroix_3_08032021/issues"
+  },
+  "homepage": "https://github.com/yann-lcrx/YannickLacroix_3_08032021#readme"
+}
