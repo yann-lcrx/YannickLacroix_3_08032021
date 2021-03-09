@@ -1,0 +1,7 @@
+body{
+    @include width-max()
+}
+
+section{
+    @include width-standard()
+}

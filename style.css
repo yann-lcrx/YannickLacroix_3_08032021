@@ -1,3 +1,44 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand-Regular.ttf");
+}
+body, input, button {
+  font-family: "Roboto", Arial, serif;
+}
 
+.menu__name {
+  font-family: "Shrikhand", Arial, serif;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+section {
+  width: 95%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+}
+header > p {
+  display: flex;
+  justify-content: center;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+header i {
+  align-self: center;
+  margin-right: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */

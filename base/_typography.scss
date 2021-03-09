@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url("Shrikhand-Regular.ttf");
+}
+
+body, input, button{
+    font-family: 'Roboto', Arial, serif;
+}
+
+.menu__name{
+    font-family: 'Shrikhand', Arial, serif;
+}
