@@ -8,3 +8,11 @@
     margin:auto;
 }
 
+@mixin width-narrow{
+    width:75%;
+    margin:auto;
+}
+
+@mixin margin-bottom($margin-bottom){
+    margin-bottom: $margin-bottom;
+}

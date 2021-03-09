@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-regular';
     src: url("Roboto-Regular.ttf");
 }
 
@@ -8,10 +8,29 @@
     src: url("Shrikhand-Regular.ttf");
 }
 
-body, input, button{
-    font-family: 'Roboto', Arial, serif;
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url("Roboto-Medium.ttf")
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url("Roboto-Light.ttf")
+}
+
+body, input, button, strong, header p{
+    font-family: 'Roboto-regular', Arial, serif;
+}
+
+h1, h2, h3{
+    font-family: 'Roboto-medium', 'Roboto-regular', Arial, serif;
 }
 
 .menu__name{
-    font-family: 'Shrikhand', Arial, serif;
+    font-family: 'Shrikhand', 'Roboto-medium', 'Roboto-regular', Arial, serif;
+}
+
+p{
+    font-family: 'Roboto-light', Arial, serif;
+    font-size:1.1rem
 }
