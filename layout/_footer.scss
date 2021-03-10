@@ -1,0 +1,22 @@
+footer{
+    background-color: $color-bg-footer;
+    @include width-max;
+    padding: $margin-small;
+    h3{
+        color:$color-white
+    }
+    a{
+        color: $color-white
+    }
+    i{
+        margin-right: $margin-tiny;
+    }
+    ul{
+        list-style-type: none;
+        text-indent:0px;
+        padding-left: 0px;
+    }
+    li{
+        margin-bottom: $margin-tiny
+    }
+}
