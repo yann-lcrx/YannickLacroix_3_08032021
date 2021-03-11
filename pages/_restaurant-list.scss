@@ -7,6 +7,7 @@
     &__box{
         @include width-standard;
         @include box-format;
+        margin-bottom: $margin-small;
     }
     &__new{
             padding-top: 6px;
@@ -18,8 +19,11 @@
             width: 56px;
             font-size: 0.9rem;
             position:relative;
+            top:38px;
+            left:72%;
             @include box-shadow-light;
             border-radius: $radius-tiny;
+            display:inline;
     }
     &__info{
         display:flex;

@@ -1,8 +1,15 @@
 .btn{
     border:none;
-    background-color: $color-primary;
+    background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
     color: white;
     padding: 16px;
+    padding-left: 24px;
+    padding-right: 24px; 
     border-radius: 32px;
-    font-size: 1.05em
+    font-size: 1.05em;
+    @include box-shadow-light;
+    &:hover{
+        background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten(#FF79DA,3%), lighten(#9356DC,3%));
+        @include box-shadow-regular
+    }
 }
