@@ -42,6 +42,10 @@ section {
   margin: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .btn {
   border: none;
   background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
@@ -51,11 +55,11 @@ section {
   padding-right: 24px;
   border-radius: 32px;
   font-size: 1.05em;
-  box-shadow: 0px 2px 8px grey;
+  box-shadow: 0px 2px 8px lightgray;
 }
 .btn:hover {
   background: radial-gradient(ellipse farthest-corner at 15% 2%, #ff88de, #9b63df);
-  box-shadow: 0px 3px 10px grey;
+  box-shadow: 0px 3px 10px lightgray;
 }
 
 header {
@@ -137,7 +141,7 @@ footer li {
   position: relative;
   top: 38px;
   left: 72%;
-  box-shadow: 0px 2px 8px grey;
+  box-shadow: 0px 2px 8px lightgray;
   border-radius: 2px;
   display: inline;
 }

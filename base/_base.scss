@@ -5,3 +5,7 @@ body{
 section{
     @include width-standard()
 }
+
+ul{
+    list-style-type: none;
+}
