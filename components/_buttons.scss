@@ -1,6 +1,6 @@
 .btn{
     border:none;
-    background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
+    background: radial-gradient(ellipse farthest-corner at 15% 2%, $col-secondary, $col-primary);
     color: white;
     padding: 16px;
     padding-left: 24px;
@@ -9,7 +9,7 @@
     font-size: 1.05em;
     @include box-shadow-light;
     &:hover{
-        background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten(#FF79DA,3%), lighten(#9356DC,3%));
-        @include box-shadow-regular
+        background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten($col-secondary,3%), lighten($col-primary,3%));
+        @include shd-regular;
     }
 }

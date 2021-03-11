@@ -1,6 +1,10 @@
 .discover{
     text-align: center;
+    margin-bottom: $msr-max;
     h1{
         @include width-narrow
+    }
+    p{
+        margin-bottom: $msr-standard;
     }
 }

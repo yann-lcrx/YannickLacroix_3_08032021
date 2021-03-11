@@ -18,7 +18,7 @@
     src: url("Roboto-Light.ttf")
 }
 
-body, input, button, strong, header p, a{
+body, input, button, strong, header p, a, .how-to p{
     font-family: 'Roboto-regular', Arial, serif;
     text-decoration: none;
 }
@@ -34,4 +34,11 @@ h1, h2, .restaurants__new{
 p{
     font-family: 'Roboto-light', Arial, serif;
     font-size:1.1rem
+}
+
+
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
 }

@@ -1,15 +1,15 @@
 footer{
-    background-color: $color-bg-footer;
+    background-color: $col-bg-footer;
     @include width-max;
-    padding: $margin-small;
+    padding: $msr-small;
     h3{
-        color:$color-white
+        color:$col-white
     }
     a{
-        color: $color-white
+        color: $col-white
     }
     i{
-        margin-right: $margin-tiny;
+        margin-right: $msr-tiny;
     }
     ul{
         list-style-type: none;
@@ -17,6 +17,6 @@ footer{
         padding-left: 0px;
     }
     li{
-        margin-bottom: $margin-tiny
+        margin-bottom: $msr-tiny
     }
 }

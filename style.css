@@ -14,7 +14,7 @@
   font-family: "Roboto-light";
   src: url("Roboto-Light.ttf");
 }
-body, input, button, strong, header p, a {
+body, input, button, strong, header p, a, .how-to p {
   font-family: "Roboto-regular", Arial, serif;
   text-decoration: none;
 }
@@ -32,18 +32,21 @@ p {
   font-size: 1.1rem;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   width: 100%;
   margin: auto;
+  background-color: #f6f6f6;
 }
 
 section {
-  width: 95%;
+  width: 90%;
   margin: auto;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .btn {
@@ -82,6 +85,10 @@ header i {
 header img {
   width: 45%;
 }
+header p {
+  font-weight: bold;
+  font-size: 1.05em;
+}
 
 footer {
   background-color: #353535;
@@ -109,10 +116,63 @@ footer li {
 
 .discover {
   text-align: center;
+  margin-bottom: 96px;
 }
 .discover h1 {
   width: 75%;
   margin: auto;
+}
+.discover p {
+  margin-bottom: 32px;
+}
+
+.how-to li {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.how-to p:first-child {
+  display: inline-block;
+  position: relative;
+  left: 8px;
+  color: #f6f6f6;
+  background: #9356DC;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 16px;
+  font-size: 0.9em;
+  align-self: center;
+}
+.how-to div {
+  display: flex;
+  flex: 1;
+  border-radius: 24px;
+  box-shadow: 0px 3px 10px lightgray;
+  padding: 8px;
+}
+.how-to i {
+  align-self: center;
+  padding-left: 24px;
+  color: #7e7e7e;
+  flex: 0.3;
+}
+.how-to p:last-child {
+  align-self: center;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.how-to .fa-list {
+  font-size: 1.1em;
+}
+.how-to .fa-mobile-alt {
+  font-size: 1.25em;
+}
+.how-to .fa-store {
+  color: #9356DC;
+}
+.how-to--pink {
+  background-color: #ffeefa;
 }
 
 .restaurants {
@@ -123,10 +183,10 @@ footer li {
   flex-flow: nowrap column;
 }
 .restaurants__box {
-  width: 95%;
+  width: 90%;
   margin: auto;
   border-radius: 24px;
-  box-shadow: 0px 5px 16px grey;
+  box-shadow: 0px 3px 10px lightgray;
   margin-bottom: 16px;
 }
 .restaurants__new {

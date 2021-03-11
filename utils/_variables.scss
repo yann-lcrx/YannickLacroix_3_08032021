@@ -1,12 +1,20 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-bg-footer: rgb(53,53,53);
-$color-white: rgb(246,246,246);
+$col-primary: #9356DC;
+$col-secondary: #FF79DA;
+$col-tertiary: #99E2D0;
+$col-bg-footer: rgb(53,53,53);
+$col-white: rgb(246,246,246);
+$col-grey: rgb(126,126,126);
 
-$margin-tiny: 8px;
-$margin-small: 16px;
-$margin-standard: 32px;
-$margin-big: 48px;
+$msr-tiny: 8px;
+$msr-small: 16px;
+$msr-intermediate: 24px;
+$msr-standard: 32px;
+$msr-large: 48px;
+$msr-xl:64px;
+$msr-xxl:80px;
+$msr-max:96px;
 
-$radius-tiny: 2px;
+$rds-tiny: 2px;
+
+$pdn-tiny:3px;
+$pdn-small:8px;

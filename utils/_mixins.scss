@@ -4,7 +4,7 @@
 }
 
 @mixin width-standard{
-    width:95%;
+    width:90%;
     margin:auto;
 }
 
@@ -17,15 +17,15 @@
     margin-bottom: $margin-bottom;
 }
 
+@mixin shd-regular{
+    box-shadow: 0px 3px 10px lightgray
+}
+
 @mixin box-format{
     border-radius: 24px;
-    box-shadow: 0px 5px 16px grey;
+    @include shd-regular;
 }
 
 @mixin box-shadow-light{
     box-shadow: 0px 2px 8px lightgray;
-}
-
-@mixin box-shadow-regular{
-    box-shadow: 0px 3px 10px lightgray;
 }

@@ -1,0 +1,49 @@
+.how-to{
+    li{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: $msr-intermediate;
+    }
+    p:first-child{
+        display: inline-block;
+        position: relative;
+        left: 8px;
+        color: $col-white;
+        background: $col-primary;
+        padding: $pdn-tiny;
+        padding-left: $pdn-small;
+        padding-right: $pdn-small;
+        border-radius: 16px;
+        font-size: 0.9em;
+        align-self: center;
+    }
+    div{
+        display: flex;
+        flex: 1;
+        @include box-format;
+        padding:8px;
+    }
+    i{
+        align-self: center;
+        padding-left: $msr-intermediate;
+        color: $col-grey;
+        flex:0.3;
+    }
+    p:last-child{
+        align-self: center;
+        font-weight: bold;
+        font-size: 1.05em;
+    }
+    .fa-list{
+        font-size: 1.1em;
+    }
+    .fa-mobile-alt{
+        font-size: 1.25em;
+    }
+    .fa-store{
+        color: $col-primary;
+    }
+    &--pink{
+        background-color: lighten($col-secondary, 23%)
+    }
+}

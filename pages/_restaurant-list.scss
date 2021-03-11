@@ -1,5 +1,5 @@
 .restaurants{
-    margin-bottom: $margin-small;
+    margin-bottom: $msr-small;
     &__list{
         display: flex;
         flex-flow: nowrap column;
@@ -7,22 +7,22 @@
     &__box{
         @include width-standard;
         @include box-format;
-        margin-bottom: $margin-small;
+        margin-bottom: $msr-small;
     }
     &__new{
             padding-top: 6px;
             padding-bottom: 6px;
             padding-left: 12px;
             padding-right: 12px;
-            background-color: $color-tertiary;
-            color: darken($color-tertiary,38%);
+            background-color: $col-tertiary;
+            color: darken($col-tertiary,38%);
             width: 56px;
             font-size: 0.9rem;
             position:relative;
             top:38px;
             left:72%;
             @include box-shadow-light;
-            border-radius: $radius-tiny;
+            border-radius: $rds-tiny;
             display:inline;
     }
     &__info{

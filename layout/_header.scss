@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    @include margin-bottom($margin-standard);
+    @include margin-bottom($msr-standard);
     > p {
         display: flex;
         justify-content: center;
@@ -12,9 +12,13 @@ header {
     }
     i {
         align-self: center;
-        margin-right: $margin-small;
+        margin-right: $msr-small;
     }
     img {
         width:45%;
+    }
+    p{
+        font-weight: bold;
+        font-size: 1.05em;
     }
 }

@@ -1,11 +1,8 @@
 body{
-    @include width-max()
+    @include width-max();
+    background-color: $col-white;
 }
 
 section{
     @include width-standard()
-}
-
-ul{
-    list-style-type: none;
 }
