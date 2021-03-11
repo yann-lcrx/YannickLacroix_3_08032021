@@ -5,9 +5,9 @@
         flex-flow: nowrap column;
     }
     &__box{
-        @include width-standard;
         @include box-format;
         margin-bottom: $msr-small;
+        overflow: hidden;
     }
     &__new{
             padding-top: 6px;

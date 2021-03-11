@@ -116,7 +116,7 @@ footer li {
 
 .discover {
   text-align: center;
-  margin-bottom: 96px;
+  margin-bottom: 104px;
 }
 .discover h1 {
   width: 75%;
@@ -126,6 +126,9 @@ footer li {
   margin-bottom: 32px;
 }
 
+.how-to {
+  margin-bottom: 104px;
+}
 .how-to li {
   display: flex;
   justify-content: flex-start;
@@ -134,7 +137,7 @@ footer li {
 .how-to p:first-child {
   display: inline-block;
   position: relative;
-  left: 8px;
+  left: 9px;
   color: #f6f6f6;
   background: #9356DC;
   padding: 3px;
@@ -183,11 +186,10 @@ footer li {
   flex-flow: nowrap column;
 }
 .restaurants__box {
-  width: 90%;
-  margin: auto;
   border-radius: 24px;
   box-shadow: 0px 3px 10px lightgray;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 .restaurants__new {
   padding-top: 6px;
