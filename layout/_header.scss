@@ -12,10 +12,12 @@ header {
         display: flex;
         justify-content: center;
         background-color: rgb(234,234,234);
+        padding-right: $pdn-intermediate;
     }
     i {
         align-self: center;
         margin-right: $msr-small;
+        color:$col-darkgrey;
     }
     img {
         width:45%;

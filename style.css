@@ -38,6 +38,10 @@ ul {
   padding: 0px;
 }
 
+h3 {
+  font-weight: normal;
+}
+
 body {
   width: 100%;
   margin: auto;
@@ -80,10 +84,12 @@ header div:last-child {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
+  padding-right: 14px;
 }
 header i {
   align-self: center;
   margin-right: 16px;
+  color: #353535;
 }
 header img {
   width: 45%;
