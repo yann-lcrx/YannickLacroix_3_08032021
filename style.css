@@ -238,4 +238,14 @@ footer li {
   align-self: center;
 }
 
+.menu {
+  width: 100%;
+  margin: auto;
+}
+.menu img {
+  width: 100%;
+  object-fit: cover;
+  height: 375px;
+}
+
 /*# sourceMappingURL=style.css.map */
