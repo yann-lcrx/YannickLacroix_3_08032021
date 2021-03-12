@@ -1,5 +1,5 @@
 .restaurants{
-    margin-bottom: $msr-small;
+    margin-bottom: $msr-large;
     &__list{
         display: flex;
         flex-flow: nowrap column;
@@ -19,11 +19,10 @@
             width: 56px;
             font-size: 0.9rem;
             position:relative;
-            top:38px;
-            left:72%;
+            left:73%;
             @include box-shadow-light;
             border-radius: $rds-tiny;
-            display:inline;
+            margin-bottom:-45px;
     }
     &__info{
         display:flex;

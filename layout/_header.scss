@@ -1,11 +1,14 @@
 header {
     width: 100%;
     @include margin-bottom($msr-standard);
-    > p {
-        display: flex;
-        justify-content: center;
-    }
-    div{
+    div:first-child p{
+            text-align: center;
+            margin-bottom: 3px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            @include shd-regular;
+        }
+    div:last-child{
         display: flex;
         justify-content: center;
         background-color: rgb(234,234,234);
@@ -19,6 +22,7 @@ header {
     }
     p{
         font-weight: bold;
-        font-size: 1.05em;
+        font-size: 1em;
+        color:$col-darkgrey;
     }
 }

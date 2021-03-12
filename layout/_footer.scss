@@ -1,5 +1,5 @@
 footer{
-    background-color: $col-bg-footer;
+    background-color: $col-darkgrey;
     @include width-max;
     padding: $msr-small;
     h3{
@@ -10,6 +10,7 @@ footer{
     }
     i{
         margin-right: $msr-tiny;
+        font-size:0.9em
     }
     ul{
         list-style-type: none;

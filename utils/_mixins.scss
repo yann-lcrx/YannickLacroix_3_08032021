@@ -22,7 +22,7 @@
 }
 
 @mixin box-format{
-    border-radius: 24px;
+    border-radius: $pdn-intermediate;
     @include shd-regular;
 }
 
