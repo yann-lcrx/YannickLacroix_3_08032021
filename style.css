@@ -14,7 +14,7 @@
   font-family: "Roboto-light";
   src: url("Roboto-Light.ttf");
 }
-body, input, button, strong, header p, a, .how-to p {
+body, input, button, strong, header p, a, .how-to p, .menu h2 {
   font-family: "Roboto-regular", Arial, serif;
   text-decoration: none;
 }
@@ -23,7 +23,7 @@ h1, h2, .restaurants__new {
   font-family: "Roboto-medium", "Roboto-regular", Arial, serif;
 }
 
-.menu__name, footer h3 {
+.menu h1, footer h3 {
   font-family: "Shrikhand", "Roboto-medium", "Roboto-regular", Arial, serif;
 }
 
@@ -65,8 +65,13 @@ section {
   box-shadow: 0px 2px 8px lightgray;
 }
 .btn:hover {
-  background: radial-gradient(ellipse farthest-corner at 15% 2%, #ff88de, #9b63df);
+  background: radial-gradient(ellipse farthest-corner at 15% 2%, #ff8de0, #9e67e0);
   box-shadow: 0px 3px 10px lightgray;
+}
+.btn-l {
+  padding-left: 48px;
+  padding-right: 48px;
+  font-size: 1em;
 }
 
 header {
@@ -162,6 +167,7 @@ footer li {
   display: flex;
   flex: 1;
   border-radius: 14px;
+  margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
   padding: 8px;
 }
@@ -198,6 +204,7 @@ footer li {
 }
 .restaurants__box {
   border-radius: 14px;
+  margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
   margin-bottom: 16px;
   overflow: hidden;
@@ -241,11 +248,75 @@ footer li {
 .menu {
   width: 100%;
   margin: auto;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
 }
 .menu img {
   width: 100%;
   object-fit: cover;
-  height: 375px;
+  height: 270px;
+}
+.menu section {
+  margin-bottom: 16px;
+}
+.menu__name {
+  display: flex;
+  border-radius: 40px;
+  margin-bottom: -54px;
+  background: white;
+  position: relative;
+  bottom: 54px;
+  width: 100%;
+}
+.menu h1 {
+  margin-right: 32px;
+  font-size: 1.8em;
+  font-weight: 100;
+  margin-left: 5%;
+}
+.menu .fa-heart {
+  align-self: center;
+}
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 0.96em;
+  font-weight: 100;
+}
+.menu .fa-check-circle {
+  display: none;
+}
+.menu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__box {
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0px 3px 10px lightgray;
+  padding: 14px;
+}
+.menu__box p {
+  margin: 0px;
+  font-size: 0.96em;
+}
+.menu__box strong {
+  font-size: 1.1em;
+}
+.menu__box div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.menu__price {
+  font-weight: bold;
+  overflow: unset;
+  padding-left: 14px;
+}
+.menu .btn {
+  align-self: center;
+  margin-top: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

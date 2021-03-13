@@ -18,7 +18,7 @@
     src: url("Roboto-Light.ttf")
 }
 
-body, input, button, strong, header p, a, .how-to p{
+body, input, button, strong, header p, a, .how-to p, .menu h2{
     font-family: 'Roboto-regular', Arial, serif;
     text-decoration: none;
 }
@@ -27,7 +27,7 @@ h1, h2, .restaurants__new{
     font-family: 'Roboto-medium', 'Roboto-regular', Arial, serif;
 }
 
-.menu__name, footer h3{
+.menu h1, footer h3{
     font-family: 'Shrikhand', 'Roboto-medium', 'Roboto-regular', Arial, serif;
 }
 

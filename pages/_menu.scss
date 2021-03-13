@@ -1,8 +1,70 @@
 .menu{
     @include width-max;
+    margin-bottom: $msr-large;
+    display: flex;
+    flex-direction: column;
     img{
         width: 100%;
         object-fit: cover;
-        height: 375px;
+        height: 270px;
+    }
+    section{
+        margin-bottom: $msr-small;
+    }
+    &__name{
+        display: flex;
+        border-radius: 40px;
+        margin-bottom: -54px;
+        background: white;
+        position: relative;
+        bottom: 54px;
+        width: 100%;
+    }
+    h1{
+        margin-right: $msr-standard;
+        font-size: 1.8em;
+        font-weight: 100;
+        margin-left: 5%;
+    }
+    .fa-heart{
+        align-self: center;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 0.96em;
+        font-weight: 100;
+    }
+    .fa-check-circle{
+        display:none
+    }
+    p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__box{
+        @include box-format;
+        padding: $pdn-intermediate;
+        p{
+            margin: 0px;
+            font-size: 0.96em;
+        }
+        strong{
+            font-size: 1.1em;
+        }
+        div:nth-child(2){
+            display:flex;
+            justify-content: space-between;
+            margin-top: $msr-min;
+        }
+    }
+    &__price{
+        font-weight: bold;
+        overflow: unset;
+        padding-left: $pdn-intermediate;
+    }
+    .btn{
+        align-self: center;
+        margin-top: $msr-small;
     }
 }

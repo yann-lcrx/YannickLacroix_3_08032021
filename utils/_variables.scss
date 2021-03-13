@@ -4,7 +4,9 @@ $col-tertiary: #99E2D0;
 $col-darkgrey: rgb(53,53,53);
 $col-white: rgb(246,246,246);
 $col-grey: rgb(126,126,126);
+$col-shd: lightgray;
 
+$msr-min: 4px;
 $msr-tiny: 8px;
 $msr-small: 16px;
 $msr-intermediate:24px;
@@ -15,7 +17,10 @@ $msr-xxl:80px;
 $msr-max:104px;
 
 $rds-tiny:2px;
+$rds-large:40px;
 
 $pdn-tiny:3px;
 $pdn-small:8px;
 $pdn-intermediate:14px;
+$pdn-standard: 24px;
+$pdn-large: 48px;

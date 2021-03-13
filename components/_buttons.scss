@@ -9,7 +9,12 @@
     font-size: 1.05em;
     @include box-shadow-light;
     &:hover{
-        background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten($col-secondary,3%), lighten($col-primary,3%));
+        background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten($col-secondary,4%), lighten($col-primary,4%));
         @include shd-regular;
+    }
+    &-l{
+        padding-left: $pdn-large;
+        padding-right: $pdn-large;
+        font-size:1em;
     }
 }
