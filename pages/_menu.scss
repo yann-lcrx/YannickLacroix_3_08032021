@@ -1,7 +1,7 @@
 .menu{
     @include width-max;
     margin-top: -$msr-standard;
-    margin-bottom: $msr-large;
+    margin-bottom: $msr-xxl;
     display: flex;
     flex-direction: column;
     img{
