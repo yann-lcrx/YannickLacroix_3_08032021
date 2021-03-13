@@ -1,5 +1,6 @@
 .menu{
     @include width-max;
+    margin-top: -$msr-standard;
     margin-bottom: $msr-large;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@
             margin-top: $msr-min;
         }
     }
-    &__price{
+    div .menu__price{
         font-weight: bold;
         overflow: unset;
         padding-left: $pdn-intermediate;

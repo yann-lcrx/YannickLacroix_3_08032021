@@ -104,6 +104,12 @@ header p {
   font-size: 1em;
   color: #353535;
 }
+header .fa-arrow-left {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  font-size: 1.2em;
+}
 
 footer {
   background-color: #353535;
@@ -206,7 +212,6 @@ footer li {
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
-  margin-bottom: 16px;
   overflow: hidden;
 }
 .restaurants__new {
@@ -248,6 +253,7 @@ footer li {
 .menu {
   width: 100%;
   margin: auto;
+  margin-top: -32px;
   margin-bottom: 48px;
   display: flex;
   flex-direction: column;
@@ -309,7 +315,7 @@ footer li {
   justify-content: space-between;
   margin-top: 4px;
 }
-.menu__price {
+.menu div .menu__price {
   font-weight: bold;
   overflow: unset;
   padding-left: 14px;
