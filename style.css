@@ -160,6 +160,7 @@ footer li {
   display: inline-block;
   position: relative;
   left: 9px;
+  bottom: 8px;
   color: #f6f6f6;
   background: #9356DC;
   padding: 3px;
