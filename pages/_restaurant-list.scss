@@ -6,7 +6,6 @@
     }
     &__box{
         @include box-format;
-        margin-bottom: $msr-small;
         overflow: hidden;
     }
     &__new{
