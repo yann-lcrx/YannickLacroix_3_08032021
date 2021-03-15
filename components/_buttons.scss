@@ -1,17 +1,19 @@
 .btn{
     border:none;
-    background: radial-gradient(ellipse farthest-corner at 15% 2%, $col-secondary, $col-primary);
     color: white;
     padding: 16px;
     padding-left: 24px;
     padding-right: 24px; 
     border-radius: 32px;
     font-size: 1.05em;
-    @include box-shadow-light;
+    @include btn-shd;
+    transition: all 300ms;
+    background: radial-gradient(ellipse farthest-corner at 15% 2%, $col-secondary, $col-primary);
     &:hover{
         background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten($col-secondary,4%), lighten($col-primary,4%));
-        @include shd-regular;
+        @include btn-shd(darken($col-shd,10%))
     }
+    
     &-l{
         padding-left: $pdn-large;
         padding-right: $pdn-large;
