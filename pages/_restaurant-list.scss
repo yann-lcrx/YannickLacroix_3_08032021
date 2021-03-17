@@ -4,16 +4,16 @@
     &__list{
         display: flex;
         flex-flow: nowrap column;
-        @include desktop-only{
+        @include wider-screens{
             flex-flow: row wrap;
+            justify-content: space-between
         }
     }
     &__box{
         @include box-format;
         overflow: hidden;
-        @include desktop-only{
-            min-width: 47%;
-            margin-right: $msr-intermediate;
+        @include wider-screens{
+            min-width: 48%;
             margin-bottom: $msr-intermediate;
         }
     }

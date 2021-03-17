@@ -45,5 +45,10 @@ header {
         @include desktop-only{
             display: none;
         }
+        @include tablet-only{
+            top: 38px;
+            left: 34px;
+            font-size: 1.85em;
+        }
     }
 }

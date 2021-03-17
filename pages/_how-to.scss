@@ -2,7 +2,7 @@
     padding-bottom: $msr-xl;
     padding-top: $msr-large;
     background-color: white;
-    @include desktop-only{
+    @include wider-screens{
         border-radius: $rds-large;
     }
     h2{
@@ -11,18 +11,24 @@
     }
     ul{
         @include width-standard;
-        @include desktop-only{
+        @include wider-screens{
             display: flex;
             justify-content: space-evenly;
+        }
+        @include tablet-only{
+            flex-flow: row wrap;
         }
     }
     li{
         display: flex;
         justify-content: flex-start;
         margin-bottom: $msr-tiny;
-        @include desktop-only{
+        @include wider-screens{
             flex-flow: column nowrap;
             margin-bottom: 0px;
+        }
+        @include tablet-only{
+            min-width: 45%;
         }
     }
     p:first-child{
@@ -38,7 +44,7 @@
         border-radius: 16px;
         font-size: 0.9em;
         align-self: center;
-        @include desktop-only{
+        @include wider-screens{
             font-size: 1.3em;
             padding: 6px;
             padding-left: 12px;
@@ -55,7 +61,7 @@
         @include box-format;
         padding:8px;
         background-color: $col-white;
-        @include desktop-only{
+        @include wider-screens{
             padding: $pdn-standard;
             justify-content: flex-end;
             flex-direction: column-reverse;
@@ -71,7 +77,7 @@
         color: $col-grey;
         flex:0.3;
         font-size: 1.1em;
-        @include desktop-only{
+        @include wider-screens{
             padding-left: unset;
             font-size: 1.9em
         }
@@ -80,19 +86,19 @@
         align-self: center;
         font-weight: bold;
         font-size: 1.05em;
-        @include desktop-only{
+        @include wider-screens{
             font-size: 1.15em;
         }
     }
     .fa-list{
         font-size: 1.1em;
-        @include desktop-only{
+        @include wider-screens{
             font-size: 1.9em;
         }
     }
     .fa-mobile-alt{
         font-size: 1.25em;
-        @include desktop-only{
+        @include wider-screens{
             font-size: 1.85em;
         }
     }
