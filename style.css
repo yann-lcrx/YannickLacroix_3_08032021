@@ -99,9 +99,6 @@ section {
   position: relative;
   z-index: 1;
 }
-.far.fa-heart:hover::after {
-  transform: scale(1);
-}
 .far.fa-heart::after {
   content: "";
   position: absolute;
