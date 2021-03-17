@@ -1,6 +1,14 @@
 body{
     @include width-max();
     background-color: $col-white;
+    @include desktop-only{
+        @include width-desktop;
+    }
+}
+
+.how-to{
+    @include width-max();
+    background-color: white;
 }
 
 section{

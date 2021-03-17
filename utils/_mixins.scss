@@ -13,6 +13,11 @@
     margin:auto;
 }
 
+@mixin width-desktop{
+    width: unset;
+    max-width: 1240px;
+}
+
 @mixin margin-bottom($margin-bottom){
     margin-bottom: $margin-bottom;
 }

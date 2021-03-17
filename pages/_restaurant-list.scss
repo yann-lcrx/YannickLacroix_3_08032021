@@ -1,5 +1,6 @@
 .restaurants{
     margin-bottom: $msr-large;
+    margin-top: $msr-large;
     &__list{
         display: flex;
         flex-flow: nowrap column;
