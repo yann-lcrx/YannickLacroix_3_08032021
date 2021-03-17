@@ -16,8 +16,16 @@ footer{
         list-style-type: none;
         text-indent:0px;
         padding-left: 0px;
+        @include desktop-only{
+            display: flex;
+            flex-flow: nowrap row;
+            justify-content: center;
+        }
     }
     li{
-        margin-bottom: $msr-tiny
+        margin-bottom: $msr-tiny;
+        @include desktop-only{
+            margin-right: $msr-intermediate;
+        }
     }
 }

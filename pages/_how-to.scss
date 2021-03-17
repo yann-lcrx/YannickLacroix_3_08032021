@@ -2,6 +2,9 @@
     padding-bottom: $msr-xl;
     padding-top: $msr-large;
     background-color: white;
+    @include desktop-only{
+        border-radius: $rds-large;
+    }
     h2{
         @include width-standard;
         margin-bottom: $msr-intermediate;

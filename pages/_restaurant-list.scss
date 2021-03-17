@@ -4,10 +4,18 @@
     &__list{
         display: flex;
         flex-flow: nowrap column;
+        @include desktop-only{
+            flex-flow: row wrap;
+        }
     }
     &__box{
         @include box-format;
         overflow: hidden;
+        @include desktop-only{
+            min-width: 47%;
+            margin-right: $msr-intermediate;
+            margin-bottom: $msr-intermediate;
+        }
     }
     &__new{
             padding-top: 6px;

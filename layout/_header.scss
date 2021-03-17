@@ -2,17 +2,23 @@ header {
     width: 100%;
     @include margin-bottom($msr-standard);
     div:first-child p{
-            text-align: center;
-            margin-bottom: 3px;
-            padding-bottom: 8px;
-            padding-top: 8px;
-            @include shd-regular;
+        text-align: center;
+        margin-bottom: 3px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        @include shd-regular;
+        @include desktop-only{
+            box-shadow: unset;
+        }
         }
     div:last-child{
         display: flex;
         justify-content: center;
         background-color: rgb(234,234,234);
         padding-right: $pdn-intermediate;
+        @include desktop-only{
+            border-radius: $rds-intermediate;
+        }
     }
     i {
         align-self: center;
@@ -21,6 +27,9 @@ header {
     }
     img {
         width:45%;
+        @include desktop-only{
+            width:28%;
+        }
     }
     p{
         font-weight: bold;

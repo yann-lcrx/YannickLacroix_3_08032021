@@ -136,11 +136,21 @@ header div:first-child p {
   padding-top: 8px;
   box-shadow: 0px 3px 10px lightgray;
 }
+@media screen and (min-width: 1025px) {
+  header div:first-child p {
+    box-shadow: unset;
+  }
+}
 header div:last-child {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
   padding-right: 14px;
+}
+@media screen and (min-width: 1025px) {
+  header div:last-child {
+    border-radius: 16px;
+  }
 }
 header i {
   align-self: center;
@@ -149,6 +159,11 @@ header i {
 }
 header img {
   width: 45%;
+}
+@media screen and (min-width: 1025px) {
+  header img {
+    width: 28%;
+  }
 }
 header p {
   font-weight: bold;
@@ -183,8 +198,20 @@ footer ul {
   text-indent: 0px;
   padding-left: 0px;
 }
+@media screen and (min-width: 1025px) {
+  footer ul {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+  }
+}
 footer li {
   margin-bottom: 8px;
+}
+@media screen and (min-width: 1025px) {
+  footer li {
+    margin-right: 24px;
+  }
 }
 
 .discover {
@@ -204,6 +231,11 @@ footer li {
   padding-bottom: 64px;
   padding-top: 48px;
   background-color: white;
+}
+@media screen and (min-width: 1025px) {
+  .how-to {
+    border-radius: 40px;
+  }
 }
 .how-to h2 {
   width: 90%;
@@ -327,11 +359,23 @@ footer li {
   display: flex;
   flex-flow: nowrap column;
 }
+@media screen and (min-width: 1025px) {
+  .restaurants__list {
+    flex-flow: row wrap;
+  }
+}
 .restaurants__box {
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
   overflow: hidden;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__box {
+    min-width: 47%;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
 }
 .restaurants__new {
   padding-top: 6px;
