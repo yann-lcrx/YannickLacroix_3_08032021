@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    @include margin-bottom($msr-standard);
+    margin-bottom: $msr-standard;
+    background-color: white;
     div:first-child p{
         text-align: center;
         margin-bottom: 3px;
@@ -41,5 +42,8 @@ header {
         top: 26px;
         left: 23px;
         font-size: 1.2em;
+        @include desktop-only{
+            display: none;
+        }
     }
 }

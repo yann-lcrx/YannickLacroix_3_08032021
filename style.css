@@ -128,6 +128,7 @@ section {
 header {
   width: 100%;
   margin-bottom: 32px;
+  background-color: white;
 }
 header div:first-child p {
   text-align: center;
@@ -175,6 +176,11 @@ header .fa-arrow-left {
   top: 26px;
   left: 23px;
   font-size: 1.2em;
+}
+@media screen and (min-width: 1025px) {
+  header .fa-arrow-left {
+    display: none;
+  }
 }
 
 footer {
@@ -426,8 +432,27 @@ footer li {
   object-fit: cover;
   height: 270px;
 }
-.menu section {
-  margin-bottom: 16px;
+.menu__list {
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 1025px) {
+  .menu__list {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+.menu__list section {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1025px) {
+  .menu__list section {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+.menu__main-courses {
+  background-color: white;
 }
 .menu__name {
   display: flex;
@@ -437,6 +462,7 @@ footer li {
   position: relative;
   bottom: 54px;
   width: 100%;
+  justify-content: space-between;
 }
 .menu h1 {
   margin-right: 32px;
@@ -446,6 +472,7 @@ footer li {
 }
 .menu .fa-heart {
   align-self: center;
+  padding-right: 6%;
 }
 .menu h2 {
   text-transform: uppercase;
@@ -471,6 +498,7 @@ footer li {
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
+  background-color: white;
   padding: 14px;
 }
 .menu__box p {
@@ -485,7 +513,7 @@ footer li {
   justify-content: space-between;
   margin-top: 4px;
 }
-.menu div .menu__price {
+.menu div > .menu__price {
   font-weight: bold;
   overflow: unset;
   padding-left: 14px;

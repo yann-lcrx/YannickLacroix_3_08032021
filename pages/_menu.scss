@@ -9,9 +9,23 @@
         object-fit: cover;
         height: 270px;
     }
-    section{
-        margin-bottom: $msr-small;
+    &__list{
+        @include width-standard;
+        @include desktop-only{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        section{
+            margin-bottom: $msr-standard;
+            @include desktop-only{
+                padding: 16px;
+                border-radius: $rds-intermediate;
+            }
+        }
     }
+    &__main-courses{
+        background-color: white;
+    }    
     &__name{
         display: flex;
         border-radius: 40px;
@@ -20,6 +34,7 @@
         position: relative;
         bottom: 54px;
         width: 100%;
+        justify-content: space-between;
     }
     h1{
         margin-right: $msr-standard;
@@ -29,6 +44,7 @@
     }
     .fa-heart{
         align-self: center;
+        padding-right: 6%;
     }
     h2{
         text-transform: uppercase;
@@ -52,6 +68,7 @@
     }
     &__box{
         @include box-format;
+        background-color: white;
         padding: $pdn-intermediate;
         p{
             margin: 0px;
@@ -66,7 +83,7 @@
             margin-top: $msr-min;
         }
     }
-    div .menu__price{
+    div > .menu__price{
         font-weight: bold;
         overflow: unset;
         padding-left: $pdn-intermediate;
