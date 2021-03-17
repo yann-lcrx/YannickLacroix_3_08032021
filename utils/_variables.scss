@@ -25,3 +25,9 @@ $pdn-small:8px;
 $pdn-intermediate:14px;
 $pdn-standard: 24px;
 $pdn-large: 48px;
+
+$breakpoints: (
+  tablet-min: 600px,
+  tablet-max: 1024px,
+  desktop: 1025px,
+);

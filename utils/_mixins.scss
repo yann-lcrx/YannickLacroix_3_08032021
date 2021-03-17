@@ -34,3 +34,9 @@
 @mixin box-shadow-light{
     box-shadow: 0px 2px 8px $col-shd;
 }
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
