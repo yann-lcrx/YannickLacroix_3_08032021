@@ -252,7 +252,7 @@ footer li {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 32px;
-    top: 32px;
+    top: 36px;
     left: unset;
     bottom: unset;
   }
@@ -269,7 +269,7 @@ footer li {
 @media screen and (min-width: 1025px) {
   .how-to div {
     padding: 24px;
-    justify-content: flex;
+    justify-content: flex-end;
     flex-direction: column-reverse;
   }
 }
@@ -286,7 +286,7 @@ footer li {
 @media screen and (min-width: 1025px) {
   .how-to i {
     padding-left: unset;
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
 }
 .how-to p:last-child {
@@ -302,8 +302,18 @@ footer li {
 .how-to .fa-list {
   font-size: 1.1em;
 }
+@media screen and (min-width: 1025px) {
+  .how-to .fa-list {
+    font-size: 1.9em;
+  }
+}
 .how-to .fa-mobile-alt {
   font-size: 1.25em;
+}
+@media screen and (min-width: 1025px) {
+  .how-to .fa-mobile-alt {
+    font-size: 1.85em;
+  }
 }
 .how-to .fa-store {
   color: #9356DC;

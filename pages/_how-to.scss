@@ -41,7 +41,7 @@
             padding-left: 12px;
             padding-right: 12px;
             border-radius: 32px;
-            top: $msr-standard;
+            top: $msr-standard + $msr-min;
             left: unset;
             bottom: unset;
         }
@@ -54,7 +54,7 @@
         background-color: $col-white;
         @include desktop-only{
             padding: $pdn-standard;
-            justify-content: flex;
+            justify-content: flex-end;
             flex-direction: column-reverse;
         }
         &.how-to--pink{
@@ -69,7 +69,7 @@
         font-size: 1.5em;
         @include desktop-only{
             padding-left: unset;
-            font-size: 1.7em
+            font-size: 1.9em
         }
     }
     p:last-child{
@@ -82,9 +82,15 @@
     }
     .fa-list{
         font-size: 1.1em;
+        @include desktop-only{
+            font-size: 1.9em;
+        }
     }
     .fa-mobile-alt{
         font-size: 1.25em;
+        @include desktop-only{
+            font-size: 1.85em;
+        }
     }
     .fa-store{
         color: $col-primary;
