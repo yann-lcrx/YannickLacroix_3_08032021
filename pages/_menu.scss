@@ -19,6 +19,7 @@
             margin-bottom: $msr-standard;
             @include desktop-only{
                 padding: 16px;
+                margin: unset;
                 border-radius: $rds-intermediate;
             }
         }

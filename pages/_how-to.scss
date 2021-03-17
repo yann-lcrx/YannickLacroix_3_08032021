@@ -67,9 +67,10 @@
     i{
         align-self: center;
         padding-left: $msr-intermediate;
+        padding-right: $msr-tiny;
         color: $col-grey;
         flex:0.3;
-        font-size: 1.5em;
+        font-size: 1.1em;
         @include desktop-only{
             padding-left: unset;
             font-size: 1.9em
