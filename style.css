@@ -65,7 +65,7 @@ body {
 }
 
 section {
-  width: 90%;
+  width: 92%;
   margin: auto;
 }
 
@@ -135,6 +135,8 @@ header div:first-child p {
   margin-bottom: 3px;
   padding-bottom: 8px;
   padding-top: 8px;
+  margin-top: 0px;
+  padding-top: 24px;
   box-shadow: 0px 3px 10px lightgray;
 }
 @media screen and (min-width: 1025px) {
@@ -251,12 +253,12 @@ footer li {
   }
 }
 .how-to h2 {
-  width: 90%;
+  width: 92%;
   margin: auto;
   margin-bottom: 24px;
 }
 .how-to ul {
-  width: 90%;
+  width: 92%;
   margin: auto;
 }
 @media screen and (min-width: 600px) {
@@ -481,6 +483,22 @@ footer li {
     border-radius: 16px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .menu__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .menu__section div:first-child {
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .menu__section div:nth-child(3):not(:last-child) {
+    margin-right: 16px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .menu__main-courses {
     background-color: white;
@@ -500,7 +518,7 @@ footer li {
   margin-right: 32px;
   font-size: 1.8em;
   font-weight: 100;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 .menu .fa-heart {
   align-self: center;
@@ -533,12 +551,18 @@ footer li {
   background-color: white;
   padding: 14px;
 }
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .menu__box {
+    flex: 1;
+    min-width: 40%;
+  }
+}
 .menu__box p {
   margin: 0px;
-  font-size: 0.96em;
+  font-size: 0.9em;
 }
 .menu__box strong {
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
 .menu__box div:nth-child(2) {
   display: flex;

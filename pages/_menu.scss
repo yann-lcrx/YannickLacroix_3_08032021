@@ -30,6 +30,22 @@
             }
         }
     }
+    &__section{
+        @include tablet-only{
+            display: flex;
+            flex-wrap: wrap;
+        }
+            & div:first-child{
+                @include tablet-only{
+                    margin-right: $msr-small;
+                }
+            }
+            & div:nth-child(3):not(:last-child){
+                @include tablet-only{
+                    margin-right: $msr-small;
+                }
+            }
+    }
     &__main-courses{
         @include desktop-only{
             background-color: white;
@@ -49,7 +65,7 @@
         margin-right: $msr-standard;
         font-size: 1.8em;
         font-weight: 100;
-        margin-left: 5%;
+        margin-left: 4%;
     }
     .fa-heart{
         align-self: center;
@@ -79,12 +95,16 @@
         @include box-format;
         background-color: white;
         padding: $pdn-intermediate;
+        @include tablet-only{
+            flex: 1;
+            min-width: 40%;
+        }
         p{
             margin: 0px;
-            font-size: 0.96em;
+            font-size: 0.9em;
         }
         strong{
-            font-size: 1.1em;
+            font-size: 1.15em;
         }
         div:nth-child(2){
             display:flex;
