@@ -92,6 +92,13 @@
         text-overflow: ellipsis;
     }
     &__box{
+        animation: menu-appear 900ms ease-out forwards;
+        opacity:0;
+        @for $i from 1 through 10{
+            &--#{$i} {
+                animation-delay: 200ms * $i;
+            }
+        }
         @include box-format;
         background-color: white;
         padding: $pdn-intermediate;

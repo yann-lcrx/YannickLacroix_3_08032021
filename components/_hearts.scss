@@ -1,6 +1,10 @@
-.far.fa-heart{
+.heart{
+    align-self: center;
     font-size:1.5em;
-    position: relative;
+}
+
+/*.fa-heart{
+        position: relative;
     z-index: 1;
 
     &::after{
@@ -16,4 +20,4 @@
         transform-origin: bottom;
         transition: transform 250ms;
     }
-}
+}*/

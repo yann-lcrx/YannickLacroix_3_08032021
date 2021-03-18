@@ -1,3 +1,17 @@
+@keyframes menu-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  80% {
+    opacity: 0.95;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @font-face {
   font-family: "Roboto-regular";
   src: url("Roboto-Regular.ttf");
@@ -40,10 +54,6 @@ ul {
 
 h3 {
   font-weight: normal;
-}
-
-.far.fa-heart {
-  font-size: 1.5em;
 }
 
 body {
@@ -108,25 +118,29 @@ section {
   font-size: 1em;
 }
 
-.far.fa-heart {
+.heart {
+  align-self: center;
   font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-}
-.far.fa-heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scaleY(0);
-  z-index: -1;
-  color: #9356DC;
-  transform-origin: bottom;
-  transition: transform 250ms;
 }
 
+/*.fa-heart{
+        position: relative;
+    z-index: 1;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scaleY(0);
+        z-index: -1;
+        color: $col-primary;
+        transform-origin: bottom;
+        transition: transform 250ms;
+    }
+}*/
 header {
   width: 100%;
   margin-bottom: 32px;
@@ -567,11 +581,43 @@ footer li {
   text-overflow: ellipsis;
 }
 .menu__box {
+  animation: menu-appear 900ms ease-out forwards;
+  opacity: 0;
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
   background-color: white;
   padding: 14px;
+}
+.menu__box--1 {
+  animation-delay: 200ms;
+}
+.menu__box--2 {
+  animation-delay: 400ms;
+}
+.menu__box--3 {
+  animation-delay: 600ms;
+}
+.menu__box--4 {
+  animation-delay: 800ms;
+}
+.menu__box--5 {
+  animation-delay: 1000ms;
+}
+.menu__box--6 {
+  animation-delay: 1200ms;
+}
+.menu__box--7 {
+  animation-delay: 1400ms;
+}
+.menu__box--8 {
+  animation-delay: 1600ms;
+}
+.menu__box--9 {
+  animation-delay: 1800ms;
+}
+.menu__box--10 {
+  animation-delay: 2000ms;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .menu__box {
