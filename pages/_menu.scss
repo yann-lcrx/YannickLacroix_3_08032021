@@ -8,9 +8,15 @@
         width: 100%;
         object-fit: cover;
         height: 270px;
+        @include tablet-only{
+            height: 290px;
+        }
+        @include desktop-only{
+            height: 310px;
+        }
     }
     &__list{
-        @include width-standard;
+        @include width-max;
         @include desktop-only{
             display: flex;
             flex-flow: row nowrap;
@@ -90,6 +96,7 @@
         font-weight: bold;
         overflow: unset;
         padding-left: $pdn-intermediate;
+        margin-right: $msr-tiny;
     }
     .btn{
         align-self: center;

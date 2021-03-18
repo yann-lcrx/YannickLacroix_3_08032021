@@ -310,6 +310,7 @@ footer li {
     top: 36px;
     left: unset;
     bottom: unset;
+    margin-top: -32px;
   }
 }
 .how-to div {
@@ -450,8 +451,18 @@ footer li {
   object-fit: cover;
   height: 270px;
 }
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .menu img {
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu img {
+    height: 310px;
+  }
+}
 .menu__list {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 @media screen and (min-width: 1025px) {
@@ -538,6 +549,7 @@ footer li {
   font-weight: bold;
   overflow: unset;
   padding-left: 14px;
+  margin-right: 8px;
 }
 .menu .btn {
   align-self: center;
