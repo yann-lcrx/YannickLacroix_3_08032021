@@ -12,6 +12,20 @@
     transform: translateY(0px);
   }
 }
+@keyframes loader-jump {
+  0% {
+    opacity: 1;
+    transform: translateY(200px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @font-face {
   font-family: "Roboto-regular";
   src: url("Roboto-Regular.ttf");
@@ -54,6 +68,10 @@ ul {
 
 h3 {
   font-weight: normal;
+}
+
+.loading p {
+  font-family: "Shrikhand", "Roboto-medium", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -141,6 +159,37 @@ section {
         transition: transform 250ms;
     }
 }*/
+@media screen and (min-width: 1025px) {
+  .loading {
+    max-width: 1240px;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    font-family: "Shriekhand";
+    z-index: 10;
+  }
+}
+.loading__spinner {
+  display: inline-block;
+  transform: translateY(0px);
+  animation: loader-jump 3000ms;
+  opacity: 0;
+}
+@media screen and (min-width: 1025px) {
+  .loading__spinner {
+    font-size: 9em;
+  }
+}
+.loading__spinner--1 {
+  animation-delay: 500ms;
+}
+.loading__spinner--2 {
+  animation-delay: 1000ms;
+}
+.loading__spinner--3 {
+  animation-delay: 1500ms;
+}
+
 header {
   width: 100%;
   margin-bottom: 32px;

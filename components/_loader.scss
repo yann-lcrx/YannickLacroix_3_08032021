@@ -1,0 +1,25 @@
+.loading{
+    @include desktop-only{
+        max-width: 1240px;
+        width: 70%;
+        position: fixed;
+        left: 15%;
+        font-family: "Shriekhand";
+        z-index:10;
+    }
+    &__spinner {
+        display: inline-block;
+        @include desktop-only{
+            font-size: 9em;
+        }
+        transform: translateY(0px);
+        animation: loader-jump 3000ms;
+        opacity: 0;
+        @for $i from 1 through 3{
+            &--#{$i} {
+                animation-delay: 500ms * $i;
+            }
+        }
+    }
+    
+}
