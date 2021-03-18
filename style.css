@@ -389,7 +389,7 @@ footer li {
 @media screen and (min-width: 600px) {
   .restaurants__list {
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .restaurants__box {
@@ -400,8 +400,13 @@ footer li {
 }
 @media screen and (min-width: 600px) {
   .restaurants__box {
-    min-width: 48%;
+    width: 48%;
     margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .restaurants__box {
+    max-width: 375px;
   }
 }
 .restaurants__new {
@@ -418,6 +423,16 @@ footer li {
   box-shadow: 0px 2px 8px lightgray;
   border-radius: 2px;
   margin-bottom: -45px;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__new {
+    left: 80%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .restaurants__new {
+    left: 68%;
+  }
 }
 .restaurants__info {
   display: flex;

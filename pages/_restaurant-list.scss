@@ -6,15 +6,18 @@
         flex-flow: nowrap column;
         @include wider-screens{
             flex-flow: row wrap;
-            justify-content: space-between
+            justify-content: space-around;
         }
     }
     &__box{
         @include box-format;
         overflow: hidden;
         @include wider-screens{
-            min-width: 48%;
+            width: 48%;
             margin-bottom: $msr-intermediate;
+        }
+        @include tablet-only{
+            max-width: 375px;
         }
     }
     &__new{
@@ -31,6 +34,12 @@
             @include box-shadow-light;
             border-radius: $rds-tiny;
             margin-bottom:-45px;
+            @include desktop-only{
+                left:80%
+            }
+            @include tablet-only{
+                left: 68%;
+            }
     }
     &__info{
         display:flex;
