@@ -16,6 +16,7 @@
 @mixin width-desktop{
     width: unset;
     max-width: 1240px;
+    margin:auto;
 }
 
 @mixin shd-regular{

@@ -51,10 +51,12 @@ body {
   margin: auto;
   background-color: #f6f6f6;
 }
+
 @media screen and (min-width: 1025px) {
-  body {
+  .width-limit {
     width: unset;
     max-width: 1240px;
+    margin: auto;
   }
 }
 
@@ -200,6 +202,11 @@ footer {
 }
 footer h3 {
   color: #f6f6f6;
+}
+@media screen and (min-width: 1025px) {
+  footer h3 {
+    text-align: center;
+  }
 }
 footer a {
   color: #f6f6f6;

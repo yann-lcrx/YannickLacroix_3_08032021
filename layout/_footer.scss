@@ -3,7 +3,10 @@ footer{
     @include width-max;
     padding: $msr-small;
     h3{
-        color:$col-white
+        color:$col-white;
+        @include desktop-only{
+            text-align:center;
+        }
     }
     a{
         color: $col-white

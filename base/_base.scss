@@ -1,6 +1,9 @@
 body{
     @include width-max();
     background-color: $col-white;
+}
+
+.width-limit{
     @include desktop-only{
         @include width-desktop;
     }
