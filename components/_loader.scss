@@ -1,30 +1,42 @@
-$anim-dur: 1967ms;
+$spin-dur: 1967ms;
+$grow-dur: $spin-dur * 0.55;
 
 .loading{
-    @include desktop-only{
-        max-width: 1240px;
+    max-width: 1240px;
+    width: 92.5%;
+    top: 25%;
+    @include tablet-only{
+        top: 17.5%;
         width: 65%;
-        position: fixed;
-        left: 17.5%;
-        top: 25%;
-        font-family: "Shriekhand";
-        z-index:10;
-        animation: phase-out 250ms $anim-dur*2 both ease-in-out; 
+        left: 15%;
     }
+    @include desktop-only{
+        width: 65%;
+        left: 17.5%;
+    }
+    position: fixed;
+    font-family: "Shriekhand";
+    z-index:10;
+    animation: phase-out 250ms $spin-dur*2 both ease-in-out;
     p{
         text-align: center;
+        white-space: nowrap;
     }
     &__spinner {
         display: inline-block;
+        font-size: 3.55em;
         @include desktop-only{
             font-size: 6.85em;
         }
+        @include tablet-only{
+            font-size: 4.95em;
+        }
         transform: translateY(0px);
-        animation: loader-jump $anim-dur backwards ease-in-out infinite;
+        animation: loader-jump $spin-dur backwards ease-in-out infinite;
         transform-origin: center 85%;
         @for $i from 1 through 3{
             &--#{$i} {
-                animation-delay: $anim-dur/6 * $i;
+                animation-delay: $spin-dur/6 * $i;
             }
         }
     }
@@ -34,12 +46,12 @@ $anim-dur: 1967ms;
         justify-content: center;
     }
     &__circle{
-        animation: loader-grow $anim-dur * 0.8 ease-in-out alternate infinite;
-        width: 10%;
+        animation: loader-grow $grow-dur ease-in-out alternate infinite;
+        width: $msr-large;
         font-size:1.6em;
         @for $i from 1 through 3{
             &--#{$i} {
-                animation-delay: $anim-dur/3 * ($i - 1);
+                animation-delay: $grow-dur/2.25 * ($i - 1);
             }
         }
         &:first-child{
