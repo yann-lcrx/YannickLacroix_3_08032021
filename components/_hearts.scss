@@ -1,13 +1,28 @@
 .heart{
     align-self: center;
     font-size:1.5em;
-}
-
-/*.fa-heart{
+    overflow: hidden;
+    &__btn{
         position: relative;
+        left: 30px;
+        &--full{
+        color: $col-primary;
+        z-index:2;
+        &:first-child{
+        transform: translateX(30px);
+        }
+        }
+    }
+    &:hover{
+        & > .heart__btn--full{
+        transform: translateX(-30px) 100ms;
+        }
+    }    
+}
+/*.fa-heart{
+    
     z-index: 1;
-
-    &::after{
+    &after{
         content: "";
         position: absolute;
         top: 0;

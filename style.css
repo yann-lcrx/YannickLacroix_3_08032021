@@ -28,7 +28,7 @@
   43% {
     transform: scaleY(0.94) scaleX(1.06) translateY(0px);
   }
-  50% {
+  44% {
     transform: scaleY(0.93) scaleX(1.05) translateY(0px);
   }
   63% {
@@ -90,7 +90,7 @@ h1, h2, .restaurants__new {
   font-family: "Roboto-medium", "Roboto-regular", Arial, serif;
 }
 
-.menu h1, footer h3 {
+.menu h1, footer h3, .loading {
   font-family: "Shrikhand", "Roboto-medium", "Roboto-regular", Arial, serif;
 }
 
@@ -178,13 +178,27 @@ section {
 .heart {
   align-self: center;
   font-size: 1.5em;
+  overflow: hidden;
+}
+.heart__btn {
+  position: relative;
+  left: 30px;
+}
+.heart__btn--full {
+  color: #9356DC;
+  z-index: 2;
+}
+.heart__btn--full:first-child {
+  transform: translateX(30px);
+}
+.heart:hover > .heart__btn--full {
+  transform: translateX(-30px) 100ms;
 }
 
 /*.fa-heart{
-        position: relative;
-    z-index: 1;
 
-    &::after{
+    z-index: 1;
+    &after{
         content: "";
         position: absolute;
         top: 0;
@@ -203,7 +217,6 @@ section {
   width: 92.5%;
   top: 25%;
   position: fixed;
-  font-family: "Shriekhand";
   z-index: 10;
   animation: phase-out 250ms 3934ms both ease-in-out;
 }

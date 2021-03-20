@@ -15,7 +15,6 @@ $grow-dur: $spin-dur * 0.55;
         left: 17.5%;
     }
     position: fixed;
-    font-family: "Shriekhand";
     z-index:10;
     animation: phase-out 250ms $spin-dur*2 both ease-in-out;
     p{
