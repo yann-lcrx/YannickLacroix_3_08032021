@@ -1,23 +1,30 @@
+$anim-dur: 1967ms;
+
 .loading{
     @include desktop-only{
         max-width: 1240px;
-        width: 70%;
+        width: 65%;
         position: fixed;
-        left: 15%;
+        left: 17.5%;
+        top: 25%;
         font-family: "Shriekhand";
         z-index:10;
+        animation: phase-out 250ms $anim-dur*2 both ease-in-out; 
+    }
+    p{
+        text-align: center;
     }
     &__spinner {
         display: inline-block;
         @include desktop-only{
-            font-size: 9em;
+            font-size: 6.9em;
         }
         transform: translateY(0px);
-        animation: loader-jump 3000ms;
-        opacity: 0;
+        animation: loader-jump $anim-dur backwards ease-in-out 2;
+        transform-origin: center 85%;
         @for $i from 1 through 3{
             &--#{$i} {
-                animation-delay: 500ms * $i;
+                animation-delay: $anim-dur/9 * $i;
             }
         }
     }

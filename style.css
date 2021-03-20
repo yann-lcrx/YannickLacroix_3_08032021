@@ -15,15 +15,43 @@
 @keyframes loader-jump {
   0% {
     opacity: 1;
-    transform: translateY(200px);
+    transform: scaleY(1) translateY(0px);
+  }
+  8% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: scaleY(0.95) scaleX(1.05) translateY(0px);
+  }
+  27% {
+    opacity: 1;
+    transform: scaleY(1.1) scaleX(0.9) translateY(-12px);
+  }
+  43% {
+    opacity: 1;
+    transform: scaleY(0.94) scaleX(1.06) translateY(0px);
   }
   50% {
     opacity: 1;
-    transform: translateY(14px);
+    transform: scaleY(0.92) scaleX(1.08) translateY(0px);
+  }
+  63% {
+    opacity: 1;
+    transform: scaleY(1) translate(0px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: scaleY(1) translate(0px);
+  }
+}
+@keyframes phase-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @font-face {
@@ -162,32 +190,37 @@ section {
 @media screen and (min-width: 1025px) {
   .loading {
     max-width: 1240px;
-    width: 70%;
+    width: 65%;
     position: fixed;
-    left: 15%;
+    left: 17.5%;
+    top: 25%;
     font-family: "Shriekhand";
     z-index: 10;
+    animation: phase-out 250ms 3934ms both ease-in-out;
   }
+}
+.loading p {
+  text-align: center;
 }
 .loading__spinner {
   display: inline-block;
   transform: translateY(0px);
-  animation: loader-jump 3000ms;
-  opacity: 0;
+  animation: loader-jump 1967ms backwards ease-in-out 2;
+  transform-origin: center 85%;
 }
 @media screen and (min-width: 1025px) {
   .loading__spinner {
-    font-size: 9em;
+    font-size: 6.9em;
   }
 }
 .loading__spinner--1 {
-  animation-delay: 500ms;
+  animation-delay: 218.5555555556ms;
 }
 .loading__spinner--2 {
-  animation-delay: 1000ms;
+  animation-delay: 437.1111111111ms;
 }
 .loading__spinner--3 {
-  animation-delay: 1500ms;
+  animation-delay: 655.6666666667ms;
 }
 
 header {
