@@ -14,35 +14,27 @@
 }
 @keyframes loader-jump {
   0% {
-    opacity: 1;
     transform: scaleY(1) translateY(0px);
   }
   2% {
-    opacity: 1;
     transform: scaleY(1) translateY(0px);
   }
   10% {
-    opacity: 1;
     transform: scaleY(0.95) scaleX(1.05) translateY(0px);
   }
   27% {
-    opacity: 1;
     transform: scaleY(1.1) scaleX(0.9) translateY(-12px);
   }
   43% {
-    opacity: 1;
     transform: scaleY(0.94) scaleX(1.06) translateY(0px);
   }
   50% {
-    opacity: 1;
-    transform: scaleY(0.92) scaleX(1.08) translateY(0px);
+    transform: scaleY(0.93) scaleX(1.05) translateY(0px);
   }
   63% {
-    opacity: 1;
     transform: scaleY(1) translate(0px);
   }
   100% {
-    opacity: 1;
     transform: scaleY(1) translate(0px);
   }
 }
@@ -50,8 +42,21 @@
   0% {
     opacity: 1;
   }
+  80% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
   100% {
     opacity: 0;
+    transform: translateX(1500px);
+  }
+}
+@keyframes loader-grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.6);
   }
 }
 @font-face {
@@ -205,12 +210,12 @@ section {
 .loading__spinner {
   display: inline-block;
   transform: translateY(0px);
-  animation: loader-jump 1967ms backwards ease-in-out 2;
+  animation: loader-jump 1967ms backwards ease-in-out infinite;
   transform-origin: center 85%;
 }
 @media screen and (min-width: 1025px) {
   .loading__spinner {
-    font-size: 6.9em;
+    font-size: 6.85em;
   }
 }
 .loading__spinner--1 {
@@ -221,6 +226,34 @@ section {
 }
 .loading__spinner--3 {
   animation-delay: 983.5ms;
+}
+.loading div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.loading__circle {
+  animation: loader-grow 1573.6ms ease-in-out alternate infinite;
+  width: 10%;
+  font-size: 1.6em;
+}
+.loading__circle--1 {
+  animation-delay: 0ms;
+}
+.loading__circle--2 {
+  animation-delay: 655.6666666667ms;
+}
+.loading__circle--3 {
+  animation-delay: 1311.3333333333ms;
+}
+.loading__circle:first-child {
+  color: #9356DC;
+}
+.loading__circle:nth-child(2) {
+  color: #FF79DA;
+}
+.loading__circle:last-child {
+  color: #99E2D0;
 }
 
 header {

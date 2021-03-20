@@ -17,10 +17,10 @@ $anim-dur: 1967ms;
     &__spinner {
         display: inline-block;
         @include desktop-only{
-            font-size: 6.9em;
+            font-size: 6.85em;
         }
         transform: translateY(0px);
-        animation: loader-jump $anim-dur backwards ease-in-out 2;
+        animation: loader-jump $anim-dur backwards ease-in-out infinite;
         transform-origin: center 85%;
         @for $i from 1 through 3{
             &--#{$i} {
@@ -28,5 +28,28 @@ $anim-dur: 1967ms;
             }
         }
     }
-    
+    div{
+        text-align:center;
+        display:flex;
+        justify-content: center;
+    }
+    &__circle{
+        animation: loader-grow $anim-dur * 0.8 ease-in-out alternate infinite;
+        width: 10%;
+        font-size:1.6em;
+        @for $i from 1 through 3{
+            &--#{$i} {
+                animation-delay: $anim-dur/3 * ($i - 1);
+            }
+        }
+        &:first-child{
+            color: $col-primary;
+        }
+        &:nth-child(2){
+            color: $col-secondary;
+        }
+        &:last-child{
+            color: $col-tertiary;
+        }
+    }
 }
