@@ -24,7 +24,7 @@ $anim-dur: 1967ms;
         transform-origin: center 85%;
         @for $i from 1 through 3{
             &--#{$i} {
-                animation-delay: $anim-dur/9 * $i;
+                animation-delay: $anim-dur/6 * $i;
             }
         }
     }
