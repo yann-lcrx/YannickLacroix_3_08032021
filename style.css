@@ -231,7 +231,7 @@ section {
   display: inline-block;
   font-size: 3.55em;
   transform: translateY(0px);
-  animation: loader-jump 1967ms backwards cubic-bezier(0.14, 0.47, 0.93, 0.61) infinite;
+  animation: loader-jump 1967ms backwards ease-in-out infinite;
   transform-origin: center 85%;
 }
 @media screen and (min-width: 1025px) {
