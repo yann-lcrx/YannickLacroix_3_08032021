@@ -176,42 +176,32 @@ section {
 }
 
 .heart {
+  height: 24px;
   align-self: center;
-  font-size: 1.5em;
+  font-size: 24px;
   overflow: hidden;
+  position: relative;
+  z-index: 4;
+}
+.heart i {
+  display: inline-block;
+  position: relative;
 }
 .heart__btn {
-  position: relative;
   left: 30px;
+  z-index: 3;
 }
 .heart__btn--full {
   color: #9356DC;
   z-index: 2;
-}
-.heart__btn--full:first-child {
-  transform: translateX(30px);
+  transform: scale(0);
 }
 .heart:hover > .heart__btn--full {
-  transform: translateX(-30px) 100ms;
+  transform: scale(1);
+  transform-origin: 50% 100%;
+  transition: transform 350ms ease-in-out;
 }
 
-/*.fa-heart{
-
-    z-index: 1;
-    &after{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: scaleY(0);
-        z-index: -1;
-        color: $col-primary;
-        transform-origin: bottom;
-        transition: transform 250ms;
-    }
-}*/
 .loading {
   max-width: 1240px;
   width: 92.5%;
@@ -241,7 +231,7 @@ section {
   display: inline-block;
   font-size: 3.55em;
   transform: translateY(0px);
-  animation: loader-jump 1967ms backwards ease-in-out infinite;
+  animation: loader-jump 1967ms backwards cubic-bezier(0.14, 0.47, 0.93, 0.61) infinite;
   transform-origin: center 85%;
 }
 @media screen and (min-width: 1025px) {
