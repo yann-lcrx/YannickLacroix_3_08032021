@@ -18,5 +18,6 @@
   "homepage": "https://github.com/yann-lcrx/YannickLacroix_3_08032021#readme",
   "dependencies": {
     "sass": "^1.32.8"
-  }
+  },
+  "devDependencies": {}
 }

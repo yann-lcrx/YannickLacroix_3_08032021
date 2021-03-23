@@ -142,7 +142,6 @@ section {
   position: relative;
   z-index: 1;
   border: none;
-  color: white;
   padding: 16px;
   padding-left: 24px;
   padding-right: 24px;
@@ -150,6 +149,9 @@ section {
   font-size: 1.05em;
   box-shadow: 0px 7px 9px lightgray;
   background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
+}
+.btn a {
+  color: white;
 }
 .btn:hover::after {
   opacity: 1;
@@ -196,7 +198,7 @@ section {
   z-index: 2;
   transform: scale(0);
 }
-.heart a :hover > .heart__btn--full {
+.heart:hover > .heart__btn--full {
   transform: scale(1);
   transform-origin: 50% 100%;
   transition: transform 350ms ease-in-out;
@@ -777,6 +779,10 @@ footer li {
   display: flex;
   justify-content: space-between;
   margin-top: 4px;
+}
+.menu__box a {
+  color: black;
+  text-decoration: none;
 }
 .menu div > .menu__price {
   font-weight: bold;
