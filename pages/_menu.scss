@@ -62,7 +62,6 @@
         justify-content: space-between;
     }
     h1{
-        margin-right: $msr-standard;
         font-size: 1.8em;
         font-weight: 100;
         margin-left: 4%;
@@ -82,9 +81,6 @@
             background-color: $col-tertiary;
             margin-bottom: $msr-tiny + $msr-min;
         }
-    }
-    .fa-check-circle{
-        display:none
     }
     p{
         white-space: nowrap;
@@ -113,17 +109,22 @@
         strong{
             font-size: 1.15em;
         }
-        div:nth-child(2){
-            display:flex;
-            justify-content: space-between;
-            margin-top: $msr-min;
-        }
         a{
             color: black;
             text-decoration: none;
+            > div{
+                display:flex;
+                flex-flow: row nowrap;
+            }
         }
     }
-    div > .menu__price{
+    &__meal__info{
+        display:flex;
+        justify-content: space-between;
+        margin-top: $msr-min;
+        flex-flow:row nowrap;
+    }
+    div > p:last-child{
         font-weight: bold;
         overflow: unset;
         padding-left: $pdn-intermediate;
@@ -133,4 +134,9 @@
         align-self: center;
         margin-top: $msr-small;
     }
+}
+
+.check{
+    align-self: center;
+    background-color: $col-tertiary;
 }
