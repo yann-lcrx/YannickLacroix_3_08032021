@@ -16,6 +16,10 @@
         }
     }
     &__list{
+        a{
+            color: black;
+            text-decoration: none;
+        }
         @include width-max;
         @include desktop-only{
             display: flex;
@@ -111,8 +115,6 @@
             font-size: 1.15em;
         }
         a{
-            color: black;
-            text-decoration: none;
             > div{
                 display:flex;
                 flex-flow: row nowrap;

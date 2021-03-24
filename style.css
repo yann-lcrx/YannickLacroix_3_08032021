@@ -138,7 +138,8 @@ section {
   margin: auto;
 }
 
-button.btn {
+a.btn {
+  display: inline-block;
   position: relative;
   z-index: 1;
   border: none;
@@ -149,15 +150,13 @@ button.btn {
   font-size: 1.05em;
   box-shadow: 0px 7px 9px lightgray;
   background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
-}
-button.btn a {
   color: white;
 }
-button.btn:hover::after {
+a.btn:hover::after {
   opacity: 1;
   border-radius: 32px;
 }
-button.btn::after {
+a.btn::after {
   content: "";
   border-radius: 32px;
   position: absolute;
@@ -171,7 +170,7 @@ button.btn::after {
   box-shadow: 0px 7px 9px #bababa;
   transition: opacity 250ms;
 }
-button.btn-l {
+a.btn-l {
   padding-left: 48px;
   padding-right: 48px;
   font-size: 1em;
@@ -646,6 +645,10 @@ footer li {
   width: 100%;
   margin: auto;
 }
+.menu__list a {
+  color: black;
+  text-decoration: none;
+}
 @media screen and (min-width: 1025px) {
   .menu__list {
     display: flex;
@@ -770,10 +773,6 @@ footer li {
 }
 .menu strong {
   font-size: 1.15em;
-}
-.menu a {
-  color: black;
-  text-decoration: none;
 }
 .menu a > div {
   display: flex;
