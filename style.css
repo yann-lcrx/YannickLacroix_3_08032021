@@ -192,9 +192,12 @@ a.btn-l {
   left: 30px;
   z-index: 3;
   color: black;
+  opacity: 1;
 }
 .heart__btn--full {
-  color: #9356DC;
+  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 2;
   transform: scale(0);
 }
@@ -202,6 +205,10 @@ a.btn-l {
   transform: scale(1);
   transform-origin: 50% 100%;
   transition: transform 350ms ease-in-out;
+}
+.heart:hover > .heart__btn {
+  opacity: 0;
+  transition: opacity 500ms 350ms ease-in-out;
 }
 
 .loading {

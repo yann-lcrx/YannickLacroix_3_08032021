@@ -1,9 +1,10 @@
-$heart-size:24px;
+$hrt-size:24px;
+$hrt-fill-dur:350ms;
 
 .heart{
-    height: $heart-size;
+    height: $hrt-size;
     align-self: center;
-    font-size:$heart-size;
+    font-size:$hrt-size;
     overflow: hidden;
     position:relative;
     z-index: 4;
@@ -15,8 +16,11 @@ $heart-size:24px;
         left:30px;
         z-index: 3;
         color: black;
+        opacity: 1;
         &--full{
-        color: $col-primary;
+        background: -webkit-linear-gradient(90deg, $col-secondary, $col-primary 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         z-index:2;
         transform: scale(0);
         }
@@ -25,7 +29,11 @@ $heart-size:24px;
         & > .heart__btn--full{
             transform: scale(1);
             transform-origin: 50% 100%;
-            transition: transform 350ms ease-in-out;
+            transition: transform $hrt-fill-dur ease-in-out;
+        }
+        & > .heart__btn{
+            opacity: 0;
+            transition: opacity 500ms $hrt-fill-dur ease-in-out;
         }
     }    
 }
