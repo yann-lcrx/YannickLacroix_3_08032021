@@ -138,7 +138,7 @@ section {
   margin: auto;
 }
 
-.btn {
+button.btn {
   position: relative;
   z-index: 1;
   border: none;
@@ -150,14 +150,14 @@ section {
   box-shadow: 0px 7px 9px lightgray;
   background: radial-gradient(ellipse farthest-corner at 15% 2%, #FF79DA, #9356DC);
 }
-.btn a {
+button.btn a {
   color: white;
 }
-.btn:hover::after {
+button.btn:hover::after {
   opacity: 1;
   border-radius: 32px;
 }
-.btn::after {
+button.btn::after {
   content: "";
   border-radius: 32px;
   position: absolute;
@@ -171,7 +171,7 @@ section {
   box-shadow: 0px 7px 9px #bababa;
   transition: opacity 250ms;
 }
-.btn-l {
+button.btn-l {
   padding-left: 48px;
   padding-right: 48px;
   font-size: 1em;
@@ -720,13 +720,13 @@ footer li {
   text-overflow: ellipsis;
 }
 .menu__box {
+  overflow: hidden;
   animation: menu-appear 900ms ease-out forwards;
   opacity: 0;
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px lightgray;
   background-color: white;
-  padding: 14px;
 }
 .menu__box--1 {
   animation-delay: 200ms;
@@ -764,20 +764,31 @@ footer li {
     min-width: 40%;
   }
 }
-.menu__box p {
+.menu p {
   margin: 0px;
   font-size: 0.9em;
 }
-.menu__box strong {
+.menu strong {
   font-size: 1.15em;
 }
-.menu__box a {
+.menu a {
   color: black;
   text-decoration: none;
 }
-.menu__box a > div {
+.menu a > div {
   display: flex;
   flex-flow: row nowrap;
+}
+.menu a:hover .check {
+  transform: translateX(0px);
+  transition: transform 400ms;
+}
+.menu a:hover .check__circle {
+  transform: rotate(100%);
+  transition: transform 400ms;
+}
+.menu__meal {
+  padding: 14px;
 }
 .menu__meal__info {
   display: flex;
@@ -797,8 +808,18 @@ footer li {
 }
 
 .check {
-  align-self: center;
+  transform: translateX(58px);
+  display: flex;
+  justify-content: center;
   background-color: #99E2D0;
+  height: 70px;
+  width: 58px;
+}
+.check i {
+  align-self: center;
+  color: white;
+  font-size: 21px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
