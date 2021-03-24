@@ -92,7 +92,8 @@
         text-overflow: ellipsis;
     }
     &__box{
-        overflow: hidden;
+        display:flex;
+        overflow:hidden;
         animation: menu-appear 900ms ease-out forwards;
         opacity:0;
         @for $i from 1 through 10{
@@ -115,14 +116,11 @@
             font-size: 1.15em;
         }
         a{
-            > div{
-                display:flex;
-                flex-flow: row nowrap;
-            }
             &:hover{
                 .check{
-                    transform: translateX(0px);
+                    transform: scaleX(1);
                     transition: transform 400ms;
+                    transform-origin: right;
                 }
                 .check__circle{
                     transform: rotate(100%);
@@ -131,6 +129,7 @@
             }
         }
     &__meal{
+        overflow: hidden;
         padding: $pdn-intermediate;
         &__info{
         display:flex;
@@ -152,7 +151,7 @@
 }
 
 .check{
-    transform: translateX(58px);
+    transform: scaleX(0);
     display:flex;
     justify-content: center;
     background-color: $col-tertiary;
