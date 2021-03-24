@@ -191,6 +191,7 @@ a.btn-l {
 .heart__btn {
   left: 30px;
   z-index: 3;
+  color: black;
 }
 .heart__btn--full {
   color: #9356DC;
