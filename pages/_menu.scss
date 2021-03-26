@@ -123,7 +123,7 @@
                     transform-origin: right;
                 }
                 .check__circle{
-                    transform: rotate(100%);
+                    transform: rotate(360deg);
                     transition: transform 400ms;
                 }
             }

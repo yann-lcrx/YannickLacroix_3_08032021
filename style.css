@@ -789,7 +789,7 @@ footer li {
   transform-origin: right;
 }
 .menu a:hover .check__circle {
-  transform: rotate(100%);
+  transform: rotate(360deg);
   transition: transform 400ms;
 }
 .menu__meal {
