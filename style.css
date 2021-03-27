@@ -176,13 +176,20 @@ a.btn-l {
   font-size: 1em;
 }
 
+/*for wider resolutions*/
 .heart {
-  height: 24px;
+  height: 25px;
   align-self: center;
   font-size: 24px;
   overflow: hidden;
   position: relative;
   z-index: 4;
+}
+@media screen and (min-width: 600px) {
+  .heart {
+    height: 28px;
+    font-size: 27px;
+  }
 }
 .heart i {
   display: inline-block;
@@ -193,6 +200,11 @@ a.btn-l {
   z-index: 3;
   color: black;
   opacity: 1;
+}
+@media screen and (min-width: 600px) {
+  .heart__btn {
+    left: 33px;
+  }
 }
 .heart__btn--full {
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC 90%);
@@ -661,6 +673,7 @@ footer li {
   .menu__list {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
   }
 }
 .menu__list section {
@@ -671,6 +684,7 @@ footer li {
     padding: 16px;
     margin: unset;
     border-radius: 16px;
+    min-width: 31%;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -680,12 +694,12 @@ footer li {
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .menu__section div:first-child {
+  .menu__section a:first-child {
     margin-right: 16px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .menu__section div:nth-child(3):not(:last-child) {
+  .menu__section a:nth-child(3):not(:last-child) {
     margin-right: 16px;
   }
 }
@@ -711,7 +725,7 @@ footer li {
 }
 .menu .heart {
   align-self: center;
-  padding-right: 6%;
+  padding-right: 8%;
 }
 .menu h2 {
   text-transform: uppercase;
@@ -784,17 +798,25 @@ footer li {
   font-size: 1.15em;
 }
 .menu a:hover .check {
-  transform: scaleX(1);
-  transition: transform 400ms;
-  transform-origin: right;
+  margin-right: 0px;
+  transition: margin-right 400ms;
 }
 .menu a:hover .check__circle {
-  transform: rotate(360deg);
-  transition: transform 400ms;
+  transform: translateX(0px) rotate(360deg);
+  transition: transform 500ms;
+}
+.menu a:not(:hover) .check {
+  margin-right: -64px;
+  transition: margin-right 500ms;
+}
+.menu a:not(:hover) .check__circle {
+  transform: translateX(-20px) rotate(0deg);
+  transition: transform 500ms;
 }
 .menu__meal {
   overflow: hidden;
   padding: 14px;
+  flex: 1;
 }
 .menu__meal__info {
   display: flex;
@@ -814,14 +836,15 @@ footer li {
 }
 
 .check {
-  transform: scaleX(0);
+  margin-right: -64px;
   display: flex;
   justify-content: center;
   background-color: #99E2D0;
   height: 70px;
   width: 58px;
 }
-.check i {
+.check__circle {
+  transform: translateX(-20px) rotate(0deg);
   align-self: center;
   color: white;
   font-size: 21px;

@@ -1,13 +1,19 @@
 $hrt-size:24px;
+/*for wider resolutions*/
+$hrt-size-lrg: $hrt-size+3px; 
 $hrt-fill-dur:350ms;
 
 .heart{
-    height: $hrt-size;
+    height: 1px + $hrt-size;
     align-self: center;
     font-size:$hrt-size;
     overflow: hidden;
     position:relative;
     z-index: 4;
+    @include wider-screens{
+        height: 1px + $hrt-size-lrg;
+        font-size: $hrt-size-lrg;
+    }
     i{
         display: inline-block;
         position: relative;
@@ -17,6 +23,10 @@ $hrt-fill-dur:350ms;
         z-index: 3;
         color: black;
         opacity: 1;
+        @include wider-screens{
+            left:33px;
+        }
+
         &--full{
         background: -webkit-linear-gradient(90deg, $col-secondary, $col-primary 90%);
         -webkit-background-clip: text;

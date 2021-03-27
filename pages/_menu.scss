@@ -24,6 +24,7 @@
         @include desktop-only{
             display: flex;
             flex-flow: row nowrap;
+            justify-content: space-between;
         }
         section{
             margin-bottom: $msr-standard;
@@ -31,6 +32,7 @@
                 padding: 16px;
                 margin: unset;
                 border-radius: $rds-intermediate;
+                min-width: 31%;
             }
         }
     }
@@ -39,12 +41,12 @@
             display: flex;
             flex-wrap: wrap;
         }
-            & div:first-child{
+            & a:first-child{
                 @include tablet-only{
                     margin-right: $msr-small;
                 }
             }
-            & div:nth-child(3):not(:last-child){
+            & a:nth-child(3):not(:last-child){
                 @include tablet-only{
                     margin-right: $msr-small;
                 }
@@ -72,7 +74,7 @@
     }
     .heart{
         align-self: center;
-        padding-right: 6%;
+        padding-right: 8%;
     }
     h2{
         text-transform: uppercase;
@@ -118,19 +120,31 @@
         a{
             &:hover{
                 .check{
-                    transform: scaleX(1);
-                    transition: transform 400ms;
-                    transform-origin: right;
+                    margin-right: 0px;
+                    transition: margin-right 400ms;
+                
+                    &__circle{
+                        transform: translateX(0px) rotate(360deg);
+                        transition: transform 500ms
+                    }
                 }
-                .check__circle{
-                    transform: rotate(360deg);
-                    transition: transform 400ms;
+            }
+            &:not(:hover){
+                .check{
+                    margin-right: $mrg-check;
+                    transition: margin-right 500ms;
+
+                    &__circle{
+                        transform: translateX(-20px) rotate(0deg);
+                        transition: transform 500ms;
+                    }
                 }
             }
         }
     &__meal{
         overflow: hidden;
         padding: $pdn-intermediate;
+        flex: 1;
         &__info{
         display:flex;
         justify-content: space-between;
@@ -151,13 +165,14 @@
 }
 
 .check{
-    transform: scaleX(0);
+    margin-right: $mrg-check;
     display:flex;
     justify-content: center;
     background-color: $col-tertiary;
     height: 70px;
     width: $chk-width;
-    i{
+    &__circle{
+        transform: translateX(-20px) rotate(0deg);
         align-self: center;
         color: white;
         font-size:21px;
