@@ -29,7 +29,7 @@ a.btn{
         opacity: 0;
         z-index: -1;
         background: radial-gradient(ellipse farthest-corner at 15% 2%, lighten($col-secondary,4%), lighten($col-primary,4%));
-        @include btn-shd(darken($col-shd,10%));
+        @include btn-shd(rgb(0,0,0,0.08));
         transition: opacity 250ms;
     }
     

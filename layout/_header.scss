@@ -9,7 +9,7 @@ header {
         padding-top: 8px;
         margin-top: 0px;
         padding-top: $msr-intermediate;
-        @include shd-regular;
+        box-shadow: 0px 4px 9px rgb(0,0,0,0.2);
         @include desktop-only{
             box-shadow: unset;
         }
