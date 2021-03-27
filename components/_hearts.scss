@@ -29,6 +29,7 @@ $hrt-fill-dur:350ms;
 
         &--full{
         background: -webkit-linear-gradient(90deg, $col-secondary, $col-primary 90%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         z-index:2;

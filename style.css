@@ -208,6 +208,7 @@ a.btn-l {
 }
 .heart__btn--full {
   background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC 90%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 2;
