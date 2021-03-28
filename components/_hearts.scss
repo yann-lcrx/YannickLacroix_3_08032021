@@ -22,7 +22,7 @@
         background: linear-gradient(90deg, $col-secondary, $col-primary 90%);
         opacity:0;
         position: absolute;
-        transition: $hrt-fill-dur * 0.8;
+        transition: $hrt-fill-dur * 0.6;
     }
 
     &__btn{
@@ -43,7 +43,6 @@
         }
         .heart__btn--empty{
             opacity:0;
-            transition-delay: $hrt-fill-dur / 4;
         }
     }
 

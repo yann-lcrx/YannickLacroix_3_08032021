@@ -12,7 +12,7 @@ $msr-tiny: 8px;
 $msr-small: 16px;
 $msr-intermediate:24px;
 $msr-standard:32px;
-$msr-hrt: 32px;
+$msr-hrt:30px;
 $msr-large:48px;
 $chk-width: 58px;
 $msr-xl:64px;
@@ -41,7 +41,7 @@ $breakpoints: (
 $hrt-size:24px;
 /*for wider resolutions*/
 $hrt-size-lrg: $hrt-size+4px; 
-$hrt-fill-dur:325ms;
+$hrt-fill-dur:406ms;
 $hrt-overlap:30px;
 
 $spin-dur: 1967ms;
