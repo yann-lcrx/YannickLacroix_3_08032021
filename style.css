@@ -221,6 +221,7 @@ a.btn-l {
 }
 .heart:hover .heart__btn--empty {
   opacity: 0;
+  transition-delay: 81.25ms;
 }
 
 .loading {

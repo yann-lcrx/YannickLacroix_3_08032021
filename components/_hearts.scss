@@ -43,6 +43,7 @@
         }
         .heart__btn--empty{
             opacity:0;
+            transition-delay: $hrt-fill-dur / 4;
         }
     }
 
