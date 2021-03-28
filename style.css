@@ -1,3 +1,4 @@
+/*for wider resolutions*/
 @keyframes menu-appear {
   0% {
     opacity: 0;
@@ -176,52 +177,50 @@ a.btn-l {
   font-size: 1em;
 }
 
-/*for wider resolutions*/
 .heart {
-  height: 25px;
+  color: black;
   align-self: center;
-  font-size: 24px;
-  overflow: hidden;
   position: relative;
-  z-index: 4;
+  height: 32px;
+  width: 32px;
+  background-color: #101010;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
 }
 @media screen and (min-width: 600px) {
   .heart {
-    height: 28px;
     font-size: 27px;
   }
 }
-.heart i {
-  display: inline-block;
-  position: relative;
+.heart::before {
+  content: "";
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #FF79DA, #9356DC 90%);
+  opacity: 0;
+  position: absolute;
+  transition: 260ms;
 }
 .heart__btn {
-  left: 30px;
-  z-index: 3;
-  color: black;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 325ms;
+  mix-blend-mode: screen;
+  background-color: #f6f6f6;
+}
+.heart:hover::before {
   opacity: 1;
 }
-@media screen and (min-width: 600px) {
-  .heart__btn {
-    left: 33px;
-  }
-}
-.heart__btn--full {
-  background: -webkit-linear-gradient(90deg, #FF79DA, #9356DC 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 2;
-  transform: scale(0);
-}
-.heart:hover > .heart__btn--full {
-  transform: scale(1);
-  transform-origin: 50% 100%;
-  transition: transform 350ms ease-in-out;
-}
-.heart:hover > .heart__btn {
+.heart:hover .heart__btn--empty {
   opacity: 0;
-  transition: opacity 500ms 350ms ease-in-out;
 }
 
 .loading {
@@ -726,7 +725,7 @@ footer li {
 }
 .menu .heart {
   align-self: center;
-  padding-right: 8%;
+  margin-right: 7%;
 }
 .menu h2 {
   text-transform: uppercase;

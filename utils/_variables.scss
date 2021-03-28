@@ -1,6 +1,7 @@
 $col-primary: #9356DC;
 $col-secondary: #FF79DA;
 $col-tertiary: #99E2D0;
+$col-black: rgb(16,16,16);
 $col-darkgrey: rgb(53,53,53);
 $col-white: rgb(246,246,246);
 $col-grey: rgb(126,126,126);
@@ -11,6 +12,7 @@ $msr-tiny: 8px;
 $msr-small: 16px;
 $msr-intermediate:24px;
 $msr-standard:32px;
+$msr-hrt: 32px;
 $msr-large:48px;
 $chk-width: 58px;
 $msr-xl:64px;
@@ -35,3 +37,12 @@ $breakpoints: (
   tablet: 1024px,
   desktop: 1025px,
 );
+
+$hrt-size:24px;
+/*for wider resolutions*/
+$hrt-size-lrg: $hrt-size+3px; 
+$hrt-fill-dur:325ms;
+$hrt-overlap:30px;
+
+$spin-dur: 1967ms;
+$grow-dur: $spin-dur * 0.55;
