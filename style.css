@@ -191,7 +191,7 @@ a.btn-l {
 }
 @media screen and (min-width: 600px) {
   .heart {
-    font-size: 27px;
+    font-size: 28px;
   }
 }
 .heart::before {
@@ -203,7 +203,6 @@ a.btn-l {
   background: linear-gradient(90deg, #FF79DA, #9356DC 90%);
   opacity: 0;
   position: absolute;
-  transition: 260ms;
 }
 .heart__btn {
   position: absolute;
@@ -212,15 +211,16 @@ a.btn-l {
   height: 100%;
   width: 100%;
   opacity: 1;
-  transition: 325ms;
   mix-blend-mode: screen;
   background-color: #f6f6f6;
 }
 .heart:hover::before {
   opacity: 1;
+  transition: 260ms;
 }
 .heart:hover .heart__btn--empty {
   opacity: 0;
+  transition: 325ms;
 }
 
 .loading {
@@ -849,6 +849,11 @@ footer li {
   color: white;
   font-size: 21px;
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .check__circle {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

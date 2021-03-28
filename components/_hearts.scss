@@ -22,7 +22,6 @@
         background: linear-gradient(90deg, $col-secondary, $col-primary 90%);
         opacity:0;
         position: absolute;
-        transition: $hrt-fill-dur * 0.8;
     }
 
     &__btn{
@@ -32,7 +31,6 @@
         height: 100%;
         width: 100%;
         opacity: 1;
-        transition: $hrt-fill-dur;
         mix-blend-mode: screen;
         background-color: $col-white;
     }
@@ -40,9 +38,11 @@
     &:hover{
         &::before{
             opacity:1;
+            transition: $hrt-fill-dur * 0.8;
         }
         .heart__btn--empty{
             opacity:0;
+            transition: $hrt-fill-dur;
         }
     }
 

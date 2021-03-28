@@ -175,7 +175,10 @@
         transform: translateX(-20px) rotate(0deg);
         align-self: center;
         color: white;
-        font-size:21px;
+        font-size:$chk-size;
         text-align: center;
+        @include wider-screens{
+            font-size: $chk-size-lrg;
+        }
     }
 }

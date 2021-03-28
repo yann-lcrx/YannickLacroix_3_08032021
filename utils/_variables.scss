@@ -40,9 +40,12 @@ $breakpoints: (
 
 $hrt-size:24px;
 /*for wider resolutions*/
-$hrt-size-lrg: $hrt-size+3px; 
+$hrt-size-lrg: $hrt-size+4px; 
 $hrt-fill-dur:325ms;
 $hrt-overlap:30px;
 
 $spin-dur: 1967ms;
 $grow-dur: $spin-dur * 0.55;
+
+$chk-size: 21px;
+$chk-size-lrg: $chk-size+3px;
