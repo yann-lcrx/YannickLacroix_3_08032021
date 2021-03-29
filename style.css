@@ -183,6 +183,7 @@ a.btn-l {
   position: relative;
   height: 30px;
   width: 30px;
+  background: transparent;
   background-color: #101010;
   padding: 1px;
   display: flex;
@@ -213,7 +214,7 @@ a.btn-l {
   width: 100%;
   opacity: 1;
   transition: 406ms;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   background-color: #f6f6f6;
 }
 .heart:hover::before {
@@ -501,6 +502,7 @@ footer li {
 .how-to div {
   display: flex;
   flex: 1;
+  background-color: white;
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
@@ -514,7 +516,7 @@ footer li {
     flex-direction: column-reverse;
   }
 }
-.how-to div.how-to--pink {
+.how-to div:hover {
   background-color: #ffeefa;
 }
 .how-to i {
@@ -576,6 +578,7 @@ footer li {
   }
 }
 .restaurants__box {
+  background-color: white;
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
@@ -746,6 +749,7 @@ footer li {
   overflow: hidden;
   animation: menu-appear 900ms ease-out forwards;
   opacity: 0;
+  background-color: white;
   border-radius: 14px;
   margin-bottom: 16px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
@@ -794,9 +798,13 @@ footer li {
 .menu strong {
   font-size: 1.15em;
 }
+.menu a:hover p:nth-child(2) {
+  transform: translateX(mrg-check);
+  transition: 400ms;
+}
 .menu a:hover .check {
-  margin-right: 0px;
-  transition: margin-right 400ms;
+  transform: translateX(0px);
+  transition: 400ms;
 }
 .menu a:hover .check__circle {
   transform: translateX(0px) rotate(360deg);
@@ -833,7 +841,6 @@ footer li {
 }
 
 .check {
-  margin-right: -64px;
   display: flex;
   justify-content: center;
   background-color: #99E2D0;

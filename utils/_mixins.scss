@@ -28,6 +28,7 @@
 }
 
 @mixin box-format{
+    background-color: white;
     border-radius: $pdn-intermediate;
     margin-bottom: $msr-small;
     @include shd-regular;

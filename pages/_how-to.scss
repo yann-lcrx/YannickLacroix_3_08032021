@@ -5,6 +5,7 @@
     @include wider-screens{
         border-radius: $rds-large;
     }
+
     h2{
         @include width-standard;
         margin-bottom: $msr-intermediate;
@@ -67,7 +68,7 @@
             justify-content: flex-end;
             flex-direction: column-reverse;
         }
-        &.how-to--pink{
+        &:hover{
             background-color: lighten($col-secondary, 23%);
         }
     }

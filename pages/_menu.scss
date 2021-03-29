@@ -119,10 +119,16 @@
         }
         a{
             &:hover{
+                p:nth-child(2){
+                    transform: translateX(mrg-check);
+                    transition: 400ms
+                }
+
                 .check{
-                    margin-right: 0px;
-                    transition: margin-right 400ms;
+                    transform: translateX(0px);
+                    transition: 400ms;
                 
+                    
                     &__circle{
                         transform: translateX(0px) rotate(360deg);
                         transition: transform 500ms
@@ -165,7 +171,6 @@
 }
 
 .check{
-    margin-right: $mrg-check;
     display:flex;
     justify-content: center;
     background-color: $col-tertiary;
