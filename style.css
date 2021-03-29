@@ -217,6 +217,9 @@ a.btn-l {
   mix-blend-mode: lighten;
   background-color: #f6f6f6;
 }
+.heart__btn--restaurant {
+  mix-blend-mode: screen;
+}
 .heart:hover::before {
   opacity: 1;
 }

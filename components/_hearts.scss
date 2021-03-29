@@ -36,6 +36,10 @@
         transition: $hrt-fill-dur;
         mix-blend-mode: lighten;
         background-color: $col-white;
+
+        &--restaurant{
+            mix-blend-mode: screen;
+        }
     }
 
     &:hover{
@@ -46,5 +50,4 @@
             opacity:0;
         }
     }
-
 }
