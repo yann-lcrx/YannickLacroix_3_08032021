@@ -232,7 +232,7 @@ a.btn-l {
   top: 25%;
   position: fixed;
   z-index: 10;
-  animation: phase-out 250ms 3934ms both ease-in-out;
+  animation: phase-out 250ms 1967ms both ease-in-out;
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .loading {
