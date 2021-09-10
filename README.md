@@ -46,4 +46,5 @@ l’utilisateur est redirigé vers la page du menu.
 
 ## Faire fonctionner le projet ##
 - Cloner le repo Git
-- Exécuter "npm i -g sass"
+- Installer nodeJS (si ce n'est pas déjà fait :))
+- Exécuter ```npm i -g sass```
